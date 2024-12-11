@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffffff, #e9effd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #0078ff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 12px 0;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button Logo */
+.button-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* YouTube Button */
+.youtube {
+  background: #FF0000; /* YouTube red */
+}
+
+.youtube:hover {
+  background: #CC0000; /* Darker shade of YouTube red */
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Discord Button */
+.discord {
+  background: #7289DA; /* Discord blue */
+}
+
+.discord:hover {
+  background: #5b6eae; /* Darker shade of Discord blue */
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(114, 137, 218, 0.3);
+}
+
+/* Instagram Button */
+.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Instagram gradient */
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #e07d3b, #c85c49, #b3384b, #9d1843, #820d3b); /* Darker Instagram gradient */
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(188, 24, 136, 0.3);
+}
+
+/* Facebook Button */
+.facebook {
+  background: #3b5998; /* Facebook blue */
+}
+
+.facebook:hover {
+  background: #2d4373; /* Darker shade of Facebook blue */
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(59, 89, 152, 0.3);
+}
+
+.links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: left 0.4s;
+}
+
+.links a:hover::before {
+  left: 120%;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
