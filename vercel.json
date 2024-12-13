@@ -1,17 +1,13 @@
 {
   "version": 2,
   "builds": [
-    // Existing configurations
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "styles.css", "use": "@vercel/static" },
-    // New subpage configuration
     { "src": "newsletter/index.html", "use": "@vercel/static" },
     { "src": "newsletter/styles.css", "use": "@vercel/static" }
   ],
   "routes": [
-    // Existing routes
     { "src": "/", "dest": "/index.html" },
-    // New subpage route
     { "src": "/newsletter", "dest": "/newsletter/index.html" },
     { "src": "/api/subscribe", "dest": "/api/subscribe.js" }
   ]
