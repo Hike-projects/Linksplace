@@ -4,7 +4,8 @@
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "styles.css", "use": "@vercel/static" },
     { "src": "newsletter/index.html", "use": "@vercel/static" },
-    { "src": "newsletter/styles.css", "use": "@vercel/static" }
+    { "src": "newsletter/styles.css", "use": "@vercel/static" },
+    { "src": "api/subscribe.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/", "dest": "/index.html" },
