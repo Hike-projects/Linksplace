@@ -3,13 +3,13 @@
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "styles.css", "use": "@vercel/static" },
-    { "src": "newsletter/index.html", "use": "@vercel/static" },
-    { "src": "newsletter/styles.css", "use": "@vercel/static" },
-    { "src": "api/subscribe.js", "use": "@vercel/node" }
+    { "src": "public/newsletter/index.html", "use": "@vercel/static" },
+    { "src": "public/newsletter/styles.css", "use": "@vercel/static" },
+    { "src": "pages/api/subscribe.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/", "dest": "/index.html" },
-    { "src": "/newsletter", "dest": "/newsletter/index.html" },
+    { "src": "/newsletter", "dest": "/public/newsletter/index.html" },
     { "src": "/api/subscribe", "dest": "/api/subscribe.js" }
   ]
 }
